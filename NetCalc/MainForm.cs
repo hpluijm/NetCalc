@@ -85,346 +85,344 @@ namespace NetCalc
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(MainForm));
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.calcButt = new System.Windows.Forms.Button();
-			this.noticeLabel = new System.Windows.Forms.Label();
-			this.netClassComboBox = new System.Windows.Forms.ComboBox();
-			this.ipAddress = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.nextNumOfHosts = new System.Windows.Forms.TextBox();
-			this.clacMaxNetCount = new System.Windows.Forms.TextBox();
-			this.calcIPRange = new System.Windows.Forms.TextBox();
-			this.calcBroadcast = new System.Windows.Forms.TextBox();
-			this.calcNetwork = new System.Windows.Forms.TextBox();
-			this.maxCountHosts = new System.Windows.Forms.TextBox();
-			this.nextSubnetButt = new System.Windows.Forms.Button();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.firstBitCheckBox = new System.Windows.Forms.CheckBox();
-			this.netMaskComboBox = new System.Windows.Forms.ComboBox();
-			this.prefixComboBox = new System.Windows.Forms.ComboBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.exitBtn = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.calcButt);
-			this.groupBox1.Controls.Add(this.noticeLabel);
-			this.groupBox1.Controls.Add(this.netClassComboBox);
-			this.groupBox1.Controls.Add(this.ipAddress);
-			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox1.Location = new System.Drawing.Point(8, 8);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(480, 100);
-			this.groupBox1.TabIndex = 0;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "IP \\ Network Type";
-			// 
-			// calcButt
-			// 
-			this.calcButt.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.calcButt.Location = new System.Drawing.Point(432, 72);
-			this.calcButt.Name = "calcButt";
-			this.calcButt.Size = new System.Drawing.Size(40, 24);
-			this.calcButt.TabIndex = 5;
-			this.calcButt.Text = "Calc";
-			this.calcButt.Click += new System.EventHandler(this.calcButt_Click);
-			// 
-			// noticeLabel
-			// 
-			this.noticeLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.noticeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(238)));
-			this.noticeLabel.Location = new System.Drawing.Point(8, 56);
-			this.noticeLabel.Name = "noticeLabel";
-			this.noticeLabel.Size = new System.Drawing.Size(424, 40);
-			this.noticeLabel.TabIndex = 4;
-			this.noticeLabel.Text = "Info stuff: >>MicuRadu";
-			// 
-			// netClassComboBox
-			// 
-			this.netClassComboBox.Items.AddRange(new object[] {
-																  "Class A: 0.0.0.0-127.255.255.255",
-																  "Class B: 128.0.0.0-191.255.255.255",
-																  "Class C: 192.0.0.0-223.255.255.255",
-																  "Class D: 224.0.0.0-239.255.255.255",
-																  "Class E: 240.0.0.0-254.255.255.255"});
-			this.netClassComboBox.Location = new System.Drawing.Point(248, 24);
-			this.netClassComboBox.Name = "netClassComboBox";
-			this.netClassComboBox.Size = new System.Drawing.Size(208, 21);
-			this.netClassComboBox.TabIndex = 3;
-			this.netClassComboBox.Text = "Class A: 0.0.0.0-127.255.255.255";
-			this.netClassComboBox.SelectedIndexChanged += new System.EventHandler(this.netClassComboBox_SelectedIndexChanged);
-			// 
-			// ipAddress
-			// 
-			this.ipAddress.Location = new System.Drawing.Point(24, 24);
-			this.ipAddress.Name = "ipAddress";
-			this.ipAddress.Size = new System.Drawing.Size(136, 20);
-			this.ipAddress.TabIndex = 2;
-			this.ipAddress.Text = "";
-			this.ipAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ipAddress_KeyDown);
-			this.ipAddress.Leave += new System.EventHandler(this.ipAddress_Leave);
-			// 
-			// label2
-			// 
-			this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(238)));
-			this.label2.Location = new System.Drawing.Point(168, 24);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(88, 23);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Network type:";
-			// 
-			// label1
-			// 
-			this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(238)));
-			this.label1.Location = new System.Drawing.Point(8, 24);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(24, 23);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "IP:";
-			// 
-			// groupBox2
-			// 
-			this.groupBox2.Controls.Add(this.nextNumOfHosts);
-			this.groupBox2.Controls.Add(this.clacMaxNetCount);
-			this.groupBox2.Controls.Add(this.calcIPRange);
-			this.groupBox2.Controls.Add(this.calcBroadcast);
-			this.groupBox2.Controls.Add(this.calcNetwork);
-			this.groupBox2.Controls.Add(this.maxCountHosts);
-			this.groupBox2.Controls.Add(this.nextSubnetButt);
-			this.groupBox2.Controls.Add(this.label11);
-			this.groupBox2.Controls.Add(this.label10);
-			this.groupBox2.Controls.Add(this.label9);
-			this.groupBox2.Controls.Add(this.label8);
-			this.groupBox2.Controls.Add(this.label7);
-			this.groupBox2.Controls.Add(this.firstBitCheckBox);
-			this.groupBox2.Controls.Add(this.netMaskComboBox);
-			this.groupBox2.Controls.Add(this.prefixComboBox);
-			this.groupBox2.Controls.Add(this.label6);
-			this.groupBox2.Controls.Add(this.label5);
-			this.groupBox2.Controls.Add(this.label4);
-			this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox2.Location = new System.Drawing.Point(8, 120);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(480, 256);
-			this.groupBox2.TabIndex = 1;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Results \\ Options";
-			// 
-			// nextNumOfHosts
-			// 
-			this.nextNumOfHosts.Location = new System.Drawing.Point(152, 224);
-			this.nextNumOfHosts.Name = "nextNumOfHosts";
-			this.nextNumOfHosts.Size = new System.Drawing.Size(80, 20);
-			this.nextNumOfHosts.TabIndex = 17;
-			this.nextNumOfHosts.Text = "";
-			// 
-			// clacMaxNetCount
-			// 
-			this.clacMaxNetCount.Location = new System.Drawing.Point(152, 192);
-			this.clacMaxNetCount.Name = "clacMaxNetCount";
-			this.clacMaxNetCount.Size = new System.Drawing.Size(320, 20);
-			this.clacMaxNetCount.TabIndex = 16;
-			this.clacMaxNetCount.Text = "";
-			// 
-			// calcIPRange
-			// 
-			this.calcIPRange.Location = new System.Drawing.Point(152, 160);
-			this.calcIPRange.Name = "calcIPRange";
-			this.calcIPRange.Size = new System.Drawing.Size(320, 20);
-			this.calcIPRange.TabIndex = 15;
-			this.calcIPRange.Text = "";
-			// 
-			// calcBroadcast
-			// 
-			this.calcBroadcast.Location = new System.Drawing.Point(152, 128);
-			this.calcBroadcast.Name = "calcBroadcast";
-			this.calcBroadcast.Size = new System.Drawing.Size(320, 20);
-			this.calcBroadcast.TabIndex = 14;
-			this.calcBroadcast.Text = "";
-			// 
-			// calcNetwork
-			// 
-			this.calcNetwork.Location = new System.Drawing.Point(152, 96);
-			this.calcNetwork.Name = "calcNetwork";
-			this.calcNetwork.Size = new System.Drawing.Size(320, 20);
-			this.calcNetwork.TabIndex = 13;
-			this.calcNetwork.Text = "";
-			// 
-			// maxCountHosts
-			// 
-			this.maxCountHosts.Location = new System.Drawing.Point(152, 64);
-			this.maxCountHosts.Name = "maxCountHosts";
-			this.maxCountHosts.Size = new System.Drawing.Size(320, 20);
-			this.maxCountHosts.TabIndex = 12;
-			this.maxCountHosts.Text = "";
-			// 
-			// nextSubnetButt
-			// 
-			this.nextSubnetButt.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.nextSubnetButt.Location = new System.Drawing.Point(240, 224);
-			this.nextSubnetButt.Name = "nextSubnetButt";
-			this.nextSubnetButt.Size = new System.Drawing.Size(232, 23);
-			this.nextSubnetButt.TabIndex = 11;
-			this.nextSubnetButt.Text = "Show next subnet with this number of hosts";
-			this.nextSubnetButt.Click += new System.EventHandler(this.nextSubnetButt_Click);
-			// 
-			// label11
-			// 
-			this.label11.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label11.Location = new System.Drawing.Point(8, 224);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(144, 23);
-			this.label11.TabIndex = 10;
-			this.label11.Text = "Wanted number of hosts:";
-			this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// label10
-			// 
-			this.label10.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label10.Location = new System.Drawing.Point(8, 192);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(144, 23);
-			this.label10.TabIndex = 9;
-			this.label10.Text = "Maximum number of subnets:";
-			this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// label9
-			// 
-			this.label9.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label9.Location = new System.Drawing.Point(8, 160);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(144, 23);
-			this.label9.TabIndex = 8;
-			this.label9.Text = "IP - range:";
-			this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// label8
-			// 
-			this.label8.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label8.Location = new System.Drawing.Point(8, 128);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(144, 24);
-			this.label8.TabIndex = 7;
-			this.label8.Text = "Broadcast:";
-			this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// label7
-			// 
-			this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label7.Location = new System.Drawing.Point(8, 96);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(144, 23);
-			this.label7.TabIndex = 6;
-			this.label7.Text = "Network:";
-			this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// firstBitCheckBox
-			// 
-			this.firstBitCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.firstBitCheckBox.Location = new System.Drawing.Point(352, 24);
-			this.firstBitCheckBox.Name = "firstBitCheckBox";
-			this.firstBitCheckBox.Size = new System.Drawing.Size(120, 24);
-			this.firstBitCheckBox.TabIndex = 5;
-			this.firstBitCheckBox.Text = "Allow 1st subnet-BIT";
-			this.firstBitCheckBox.CheckedChanged += new System.EventHandler(this.firstBitCheckBox_CheckedChanged);
-			// 
-			// netMaskComboBox
-			// 
-			this.netMaskComboBox.Location = new System.Drawing.Point(152, 24);
-			this.netMaskComboBox.Name = "netMaskComboBox";
-			this.netMaskComboBox.Size = new System.Drawing.Size(121, 21);
-			this.netMaskComboBox.TabIndex = 4;
-			this.netMaskComboBox.SelectedIndexChanged += new System.EventHandler(this.netMaskComboBox_SelectedIndexChanged);
-			// 
-			// prefixComboBox
-			// 
-			this.prefixComboBox.Location = new System.Drawing.Point(40, 24);
-			this.prefixComboBox.Name = "prefixComboBox";
-			this.prefixComboBox.Size = new System.Drawing.Size(48, 21);
-			this.prefixComboBox.TabIndex = 3;
-			this.prefixComboBox.SelectedIndexChanged += new System.EventHandler(this.prefixComboBox_SelectedIndexChanged);
-			// 
-			// label6
-			// 
-			this.label6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label6.Location = new System.Drawing.Point(8, 64);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(144, 23);
-			this.label6.TabIndex = 2;
-			this.label6.Text = "Maximum number of Hosts:";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// label5
-			// 
-			this.label5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label5.Location = new System.Drawing.Point(96, 24);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(56, 23);
-			this.label5.TabIndex = 1;
-			this.label5.Text = "Net-Mask:";
-			// 
-			// label4
-			// 
-			this.label4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.label4.Location = new System.Drawing.Point(8, 24);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(32, 23);
-			this.label4.TabIndex = 0;
-			this.label4.Text = "Prefix:";
-			// 
-			// exitBtn
-			// 
-			this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.exitBtn.Location = new System.Drawing.Point(462, 368);
-			this.exitBtn.Name = "exitBtn";
-			this.exitBtn.Size = new System.Drawing.Size(32, 16);
-			this.exitBtn.TabIndex = 6;
-			this.exitBtn.Text = "Exit";
-			this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(466, 2);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-			this.pictureBox1.TabIndex = 18;
-			this.pictureBox1.TabStop = false;
-			// 
-			// MainForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(496, 386);
-			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.exitBtn);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.groupBox1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "MainForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "               ::ZamolxeKnowledgeSoftworks: :MicuRadu: :SubNet Calculator: :V1.0:" +
-				":";
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox2.ResumeLayout(false);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.calcButt = new System.Windows.Forms.Button();
+            this.noticeLabel = new System.Windows.Forms.Label();
+            this.netClassComboBox = new System.Windows.Forms.ComboBox();
+            this.ipAddress = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.nextNumOfHosts = new System.Windows.Forms.TextBox();
+            this.clacMaxNetCount = new System.Windows.Forms.TextBox();
+            this.calcIPRange = new System.Windows.Forms.TextBox();
+            this.calcBroadcast = new System.Windows.Forms.TextBox();
+            this.calcNetwork = new System.Windows.Forms.TextBox();
+            this.maxCountHosts = new System.Windows.Forms.TextBox();
+            this.nextSubnetButt = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.firstBitCheckBox = new System.Windows.Forms.CheckBox();
+            this.netMaskComboBox = new System.Windows.Forms.ComboBox();
+            this.prefixComboBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.exitBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.calcButt);
+            this.groupBox1.Controls.Add(this.noticeLabel);
+            this.groupBox1.Controls.Add(this.netClassComboBox);
+            this.groupBox1.Controls.Add(this.ipAddress);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(8, 8);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(480, 100);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "IP \\ Network Type";
+            // 
+            // calcButt
+            // 
+            this.calcButt.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.calcButt.Location = new System.Drawing.Point(432, 72);
+            this.calcButt.Name = "calcButt";
+            this.calcButt.Size = new System.Drawing.Size(40, 24);
+            this.calcButt.TabIndex = 5;
+            this.calcButt.Text = "Calc";
+            this.calcButt.Click += new System.EventHandler(this.calcButt_Click);
+            // 
+            // noticeLabel
+            // 
+            this.noticeLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.noticeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.noticeLabel.Location = new System.Drawing.Point(8, 56);
+            this.noticeLabel.Name = "noticeLabel";
+            this.noticeLabel.Size = new System.Drawing.Size(424, 40);
+            this.noticeLabel.TabIndex = 4;
+            this.noticeLabel.Text = "Info stuff: >>MicuRadu";
+            // 
+            // netClassComboBox
+            // 
+            this.netClassComboBox.Items.AddRange(new object[] {
+            "Class A: 0.0.0.0-127.255.255.255",
+            "Class B: 128.0.0.0-191.255.255.255",
+            "Class C: 192.0.0.0-223.255.255.255",
+            "Class D: 224.0.0.0-239.255.255.255",
+            "Class E: 240.0.0.0-254.255.255.255"});
+            this.netClassComboBox.Location = new System.Drawing.Point(248, 24);
+            this.netClassComboBox.Name = "netClassComboBox";
+            this.netClassComboBox.Size = new System.Drawing.Size(208, 21);
+            this.netClassComboBox.TabIndex = 3;
+            this.netClassComboBox.Text = "Class A: 0.0.0.0-127.255.255.255";
+            this.netClassComboBox.SelectedIndexChanged += new System.EventHandler(this.netClassComboBox_SelectedIndexChanged);
+            // 
+            // ipAddress
+            // 
+            this.ipAddress.Location = new System.Drawing.Point(24, 24);
+            this.ipAddress.Name = "ipAddress";
+            this.ipAddress.Size = new System.Drawing.Size(136, 20);
+            this.ipAddress.TabIndex = 2;
+            this.ipAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ipAddress_KeyDown);
+            this.ipAddress.Leave += new System.EventHandler(this.ipAddress_Leave);
+            // 
+            // label2
+            // 
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(168, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Network type:";
+            // 
+            // label1
+            // 
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(8, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "IP:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.nextNumOfHosts);
+            this.groupBox2.Controls.Add(this.clacMaxNetCount);
+            this.groupBox2.Controls.Add(this.calcIPRange);
+            this.groupBox2.Controls.Add(this.calcBroadcast);
+            this.groupBox2.Controls.Add(this.calcNetwork);
+            this.groupBox2.Controls.Add(this.maxCountHosts);
+            this.groupBox2.Controls.Add(this.nextSubnetButt);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.firstBitCheckBox);
+            this.groupBox2.Controls.Add(this.netMaskComboBox);
+            this.groupBox2.Controls.Add(this.prefixComboBox);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox2.Location = new System.Drawing.Point(8, 120);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(480, 256);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Results \\ Options";
+            // 
+            // nextNumOfHosts
+            // 
+            this.nextNumOfHosts.Location = new System.Drawing.Point(152, 224);
+            this.nextNumOfHosts.Name = "nextNumOfHosts";
+            this.nextNumOfHosts.Size = new System.Drawing.Size(80, 20);
+            this.nextNumOfHosts.TabIndex = 17;
+            // 
+            // clacMaxNetCount
+            // 
+            this.clacMaxNetCount.Location = new System.Drawing.Point(152, 192);
+            this.clacMaxNetCount.Name = "clacMaxNetCount";
+            this.clacMaxNetCount.Size = new System.Drawing.Size(320, 20);
+            this.clacMaxNetCount.TabIndex = 16;
+            // 
+            // calcIPRange
+            // 
+            this.calcIPRange.Location = new System.Drawing.Point(152, 160);
+            this.calcIPRange.Name = "calcIPRange";
+            this.calcIPRange.Size = new System.Drawing.Size(320, 20);
+            this.calcIPRange.TabIndex = 15;
+            // 
+            // calcBroadcast
+            // 
+            this.calcBroadcast.Location = new System.Drawing.Point(152, 128);
+            this.calcBroadcast.Name = "calcBroadcast";
+            this.calcBroadcast.Size = new System.Drawing.Size(320, 20);
+            this.calcBroadcast.TabIndex = 14;
+            // 
+            // calcNetwork
+            // 
+            this.calcNetwork.Location = new System.Drawing.Point(152, 96);
+            this.calcNetwork.Name = "calcNetwork";
+            this.calcNetwork.Size = new System.Drawing.Size(320, 20);
+            this.calcNetwork.TabIndex = 13;
+            // 
+            // maxCountHosts
+            // 
+            this.maxCountHosts.Location = new System.Drawing.Point(152, 64);
+            this.maxCountHosts.Name = "maxCountHosts";
+            this.maxCountHosts.Size = new System.Drawing.Size(320, 20);
+            this.maxCountHosts.TabIndex = 12;
+            // 
+            // nextSubnetButt
+            // 
+            this.nextSubnetButt.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.nextSubnetButt.Location = new System.Drawing.Point(240, 224);
+            this.nextSubnetButt.Name = "nextSubnetButt";
+            this.nextSubnetButt.Size = new System.Drawing.Size(232, 23);
+            this.nextSubnetButt.TabIndex = 11;
+            this.nextSubnetButt.Text = "Show next subnet with this number of hosts";
+            this.nextSubnetButt.Click += new System.EventHandler(this.nextSubnetButt_Click);
+            // 
+            // label11
+            // 
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label11.Location = new System.Drawing.Point(8, 224);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(144, 23);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Wanted number of hosts:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label10
+            // 
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label10.Location = new System.Drawing.Point(8, 192);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(144, 23);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Maximum number of subnets:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label9
+            // 
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label9.Location = new System.Drawing.Point(8, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(144, 23);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "IP - range:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label8
+            // 
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label8.Location = new System.Drawing.Point(8, 128);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(144, 24);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Broadcast:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label7
+            // 
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label7.Location = new System.Drawing.Point(8, 96);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 23);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Network:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // firstBitCheckBox
+            // 
+            this.firstBitCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.firstBitCheckBox.Location = new System.Drawing.Point(352, 24);
+            this.firstBitCheckBox.Name = "firstBitCheckBox";
+            this.firstBitCheckBox.Size = new System.Drawing.Size(120, 24);
+            this.firstBitCheckBox.TabIndex = 5;
+            this.firstBitCheckBox.Text = "Allow 1st subnet-BIT";
+            this.firstBitCheckBox.CheckedChanged += new System.EventHandler(this.firstBitCheckBox_CheckedChanged);
+            // 
+            // netMaskComboBox
+            // 
+            this.netMaskComboBox.Location = new System.Drawing.Point(152, 24);
+            this.netMaskComboBox.Name = "netMaskComboBox";
+            this.netMaskComboBox.Size = new System.Drawing.Size(121, 21);
+            this.netMaskComboBox.TabIndex = 4;
+            this.netMaskComboBox.SelectedIndexChanged += new System.EventHandler(this.netMaskComboBox_SelectedIndexChanged);
+            // 
+            // prefixComboBox
+            // 
+            this.prefixComboBox.Location = new System.Drawing.Point(40, 24);
+            this.prefixComboBox.Name = "prefixComboBox";
+            this.prefixComboBox.Size = new System.Drawing.Size(48, 21);
+            this.prefixComboBox.TabIndex = 3;
+            this.prefixComboBox.SelectedIndexChanged += new System.EventHandler(this.prefixComboBox_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label6.Location = new System.Drawing.Point(8, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 23);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Maximum number of Hosts:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label5
+            // 
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label5.Location = new System.Drawing.Point(96, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 23);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Net-Mask:";
+            // 
+            // label4
+            // 
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label4.Location = new System.Drawing.Point(8, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 23);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Prefix:";
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.exitBtn.Location = new System.Drawing.Point(462, 368);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(32, 16);
+            this.exitBtn.TabIndex = 6;
+            this.exitBtn.Text = "Exit";
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(466, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(496, 386);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "-- Petisys Subnet Calculator --";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion
@@ -693,5 +691,15 @@ namespace NetCalc
 		{
 			Application.Exit();
 		}
-	}
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
